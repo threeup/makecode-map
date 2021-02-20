@@ -1,0 +1,23 @@
+{
+    "image1": {
+        "data": "hwQQABAAAAAzMzMzMzMzMzOIiDgzMzMzM4iIODOIiDgziIg4M4iIODOIiDgziIg4M4iIODOIiDgzMzMzM4iIODMzMzMzMzMzM4iIODMzMzMziIg4MzMzMzOIiDiIiDgzM4iIOIiIODMziIg4iIg4MzMzMzOIiDgzMzMzM4iIODMzMzMzMzMzMw==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "tilesquare"
+    },
+    "image2": {
+        "data": "hwQQABAAAAAzMzMzMzMzMzOIiDgzMzMzM4iIODOIiDgziIg4M4iIODOIiDgziIg4M4iIODOIiDgzMzMzM4iIODMzMzMzMzMzM4iIODMzMzMziIg4MzMzMzOIiDiIiDgzM4iIOIiIODMziIg4iIg4MzMzMzOIiDgzMzMzM4iIODMzMzMzMzMzMw==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "tilesquare0"
+    },
+    "image4": "hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+    "image3": {
+        "data": "hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "myImage"
+    },
+    "*": {
+        "mimeType": "image/x-mkcd-f4",
+        "dataEncoding": "base64",
+        "namespace": "myImages"
+    }
+}
