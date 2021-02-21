@@ -2,7 +2,8 @@
     "name": "mapxtron",
     "description": "",
     "dependencies": {
-        "device": "*"
+        "device": "*",
+        "arcade-text": "github:microsoft/arcade-text#v1.3.0"
     },
     "files": [
         "main.blocks",
@@ -11,7 +12,8 @@
         "assets.json",
         "images.g.jres",
         "images.g.ts",
-        "background1.ts"
+        "background1.ts",
+        "entities.ts"
     ],
     "testFiles": [
         "test.ts"
