@@ -12,7 +12,10 @@
         "images.g.jres",
         "images.g.ts",
         "background1.ts",
-        "entities.ts"
+        "entities.ts",
+        "map-world.ts",
+        "map.ts",
+        "map-northam.ts"
     ],
     "testFiles": [
         "test.ts"
