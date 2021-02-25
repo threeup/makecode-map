@@ -1,5 +1,5 @@
 {
-    "name": "mapxtron",
+    "name": "makecode-map",
     "description": "",
     "dependencies": {
         "device": "*",
