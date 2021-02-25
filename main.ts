@@ -6,6 +6,7 @@ enum Continent {
     Africa,
     Asia,
     Oceania,
+    Antarctica,
     Nothing,
 }   // enum Continent
 
@@ -23,7 +24,9 @@ label.z = 1
 label.setOutline(3, 6)
 
 function findClosestContinent(x:number, y:number):Continent {
-    if(x < 60) {
+    if(y > 105) {
+        return Continent.Antarctica;
+    } else if(x < 60) {
         return y < 60?Continent.NorthAmerica:Continent.SouthAmerica;
     } else if (x<110) {
         return y < 57?Continent.Europe:Continent.Africa;
@@ -53,8 +56,12 @@ game.onUpdate(function() {
     } else {
         cursor.setVelocity(0, 0);
     } 
+    if(cursor.y < 70) {
+        label.setPosition(cursor.x+14, cursor.y + 11);
+    } else {
+        label.setPosition(cursor.x+14, cursor.y - 18);
+    }
     
-    label.setPosition(cursor.x+14, cursor.y + 11)
     let closest = findClosestContinent(cursor.x, cursor.y);
     switch(closest) {
         default: break;
@@ -64,5 +71,6 @@ game.onUpdate(function() {
         case Continent.Africa: label.setText("Africa"); break;
         case Continent.Asia: label.setText("Asia"); break;
         case Continent.Oceania: label.setText("Oceania"); break;
+        case Continent.Antarctica: label.setText("Antarctica"); break;
     }
 })
