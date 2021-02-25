@@ -38,29 +38,48 @@ function findClosestContinent(x:number, y:number):Continent {
 }
 
 game.onUpdate(function() {
+    
     let vala = controller.A.isPressed();
     let valb = controller.B.isPressed();
     let u = controller.up.isPressed();
     let d= controller.down.isPressed();
     let r = controller.right.isPressed();
     let l = controller.left.isPressed();
+    
+
+    if(cursor.x < 5)  {
+        cursor.setPosition(5,cursor.y);
+    } else if(cursor.x >165)    {
+        cursor.setPosition(165,cursor.y);
+    }
+
+    if(cursor.y < 5)  {
+        cursor.setPosition(cursor.x,5);
+    } else if(cursor.y >120)    {
+        cursor.setPosition(cursor.x,120);
+    }
 
     if(u) {
-        cursor.setVelocity(0, cursor.vy - 2);
+        cursor.setVelocity(0, cursor.vy*1.5 - 2);
     } else if(d) {
-        cursor.setVelocity(0, cursor.vy + 2);
+        cursor.setVelocity(0, cursor.vy*1.5 + 2);
     } else if(r) {
-        cursor.setVelocity(cursor.vx + 2, 0);
+        cursor.setVelocity(cursor.vx*1.5 + 2, 0);
     } else if(l) {
-        cursor.setVelocity(cursor.vx - 2, 0);
+        cursor.setVelocity(cursor.vx*1.5 - 2, 0);
     } else {
         cursor.setVelocity(0, 0);
     } 
-    if(cursor.y < 70) {
-        label.setPosition(cursor.x+14, cursor.y + 11);
-    } else {
-        label.setPosition(cursor.x+14, cursor.y - 18);
+    let labelx = cursor.x + 14;
+    let labely = cursor.y + 11;
+
+    if(cursor.x > 80) {
+        labelx = cursor.x - 14;
     }
+    if(cursor.y > 70) {
+        labely = cursor.y - 18;
+    }
+    label.setPosition(labelx,labely)
     
     let closest = findClosestContinent(cursor.x, cursor.y);
     switch(closest) {
